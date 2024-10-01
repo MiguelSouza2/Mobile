@@ -7,7 +7,7 @@ Este repositório contém os aplicativos mobile desenvolvidos durante as aulas d
 - **React Native**: Framework JavaScript para a construção de apps nativos.
 - **Expo**: Ferramenta para facilitar o desenvolvimento e a execução dos aplicativos.
 - **API REST**: Consumo de APIs externas para funcionalidades como busca de dados e integração com serviços.
-- **SQLite**: Banco de dados local para persistência de informações.
+- **HeidiSQL**: Banco de dados local para persistência de informações.
 
 ## Como Usar
 
