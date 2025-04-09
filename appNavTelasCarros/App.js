@@ -28,9 +28,9 @@ function Tabs(){
             ? 'home-outline'
             : 'home-outline';
         } else if (route.name === 'Carros') {
-          iconName = focused ? 'person-outline' : 'person-outline';
+          iconName = focused ? 'car-outline' : 'car-outline';
         }else if (route.name === 'Mercado') {
-          iconName = focused ? 'people-outline' : 'people-outline';
+          iconName = focused ? 'bar-chart-outline' : 'bar-chart-outline';
         }
         
         //aqui define os ícones que irão aparecer nas Tabs
@@ -45,6 +45,7 @@ function Tabs(){
     }}    
     >
       <Tab.Screen name= "Carros" component={Carros}></Tab.Screen>
+      <Tab.Screen name= "Home" component={Home}></Tab.Screen>
       <Tab.Screen name= "Mercado" component={Mercado}></Tab.Screen>
     </Tab.Navigator>
   )

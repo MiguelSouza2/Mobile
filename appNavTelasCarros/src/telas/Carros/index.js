@@ -1,21 +1,12 @@
 import React, { useRef } from "react";
 import { StyleSheet, Text, View, TouchableOpacity, ImageBackground } from "react-native";
 import { Ionicons } from '@expo/vector-icons';
-import { Audio } from 'expo-av';
 
 export default function Carros({ navigation }) {
     const soundRef = useRef();
 
-    const tocarBuzina = async () => {
-        try {
-            const { sound } = await Audio.Sound.createAsync(
-                require('../../../assets/sounds/buzina.mp3')
-            );
-            soundRef.current = sound;
-            await sound.playAsync();
-        } catch (error) {
-            console.log("Erro ao tocar a buzina: ", error);
-        }
+    const tocarBuzina = () => {
+        alert("biiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiii")
     };
 
     return (

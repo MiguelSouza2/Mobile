@@ -25,20 +25,27 @@ export default function Mercado({ navigation }) {
         }
     ];
 
+    const showCarInfo = (k) => {
+        const carro = carros[k];
+        alert(`Nome: ${carro.nome}\nPreço: ${carro.preco}`);
+    };
     return (
         <ImageBackground 
             source={require("../../../assets/img/fundo4.jpg")} 
             style={styles.background}
             resizeMode="cover"
         >
-            <Text style={styles.titulo}>🔥 Mercado de Carros 🔥</Text>
+            <Text style={styles.titulo}>🔥 Luizinho's Shop 🔥</Text>
             <ScrollView contentContainerStyle={styles.lista}>
                 {carros.map((carro, index) => (
                     <View key={index} style={styles.card}>
                         <Image source={carro.img} style={styles.imagemCarro} />
                         <Text style={styles.nome}>{carro.nome}</Text>
                         <Text style={styles.preco}>{carro.preco}</Text>
-                        <TouchableOpacity style={styles.botao}>
+                        <TouchableOpacity 
+                            style={styles.botao}
+                            onPress={() => showCarInfo(index)}
+                        >
                             <Text style={styles.textoBotao}>Ver Detalhes</Text>
                         </TouchableOpacity>
                     </View>

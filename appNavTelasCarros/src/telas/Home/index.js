@@ -8,11 +8,12 @@ export default function Home({route, navigation}) {
                 <ImageBackground
                     source={require('../../../assets/img/fundo4.jpg')} // troque pra uma imagem com tema automobilístico
                     style={styles.imgBg}
+                    resizeMode="cover"
                 >
                     <View style={styles.logo}>
                         <Image
                             style={{ width: 300, resizeMode: 'contain' }}
-                            source={require('../../../assets/img/react.png')} // coloque uma logo com tema automotivo
+                            source={require('../../../assets/img/carrinhos/hotwheels.png')} // coloque uma logo com tema automotivo
                         />
                     </View>
                     
@@ -24,6 +25,14 @@ export default function Home({route, navigation}) {
                             onPress={() => navigation.navigate("Carros")}
                         >
                             <Text style={styles.textoBotao}>Acelerar!</Text>
+                        </TouchableOpacity>
+                    </View>
+                    <View style={styles.viewBotao}>
+                        <TouchableOpacity
+                            style={styles.botao}
+                            onPress={() => navigation.navigate("Mercado")}
+                        >
+                            <Text style={styles.textoBotao}>Investir!</Text>
                         </TouchableOpacity>
                     </View>
                 </ImageBackground>
