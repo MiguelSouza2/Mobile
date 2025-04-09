@@ -5,12 +5,14 @@ import {NavigationContainer} from '@react-navigation/native';
 import { createStackNavigator } from '@react-navigation/stack';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 
+
 import Home from './src/telas/Home';
-import Usuario from './src/telas/Usuario';
-import Clientes from './src/telas/Clientes';
+import Carros from './src/telas/Carros';
+import Mercado from './src/telas/Mercado';
 import Login from './src/telas/Login';
 
 import { Ionicons } from '@expo/vector-icons';
+
 const Tab = createBottomTabNavigator();
 
 function Tabs(){
@@ -25,9 +27,9 @@ function Tabs(){
           iconName = focused
             ? 'home-outline'
             : 'home-outline';
-        } else if (route.name === 'Usuario') {
+        } else if (route.name === 'Carros') {
           iconName = focused ? 'person-outline' : 'person-outline';
-        }else if (route.name === 'Clientes') {
+        }else if (route.name === 'Mercado') {
           iconName = focused ? 'people-outline' : 'people-outline';
         }
         
@@ -42,8 +44,8 @@ function Tabs(){
       inactiveTintColor: 'gray',      
     }}    
     >
-      <Tab.Screen name= "Usuario" component={Usuario}></Tab.Screen>
-      <Tab.Screen name= "Clientes" component={Clientes}></Tab.Screen>
+      <Tab.Screen name= "Carros" component={Carros}></Tab.Screen>
+      <Tab.Screen name= "Mercado" component={Mercado}></Tab.Screen>
     </Tab.Navigator>
   )
 }
@@ -57,14 +59,14 @@ export default function App() {
  <Stack.Navigator initialRouteName='Login'>
 
    <Stack.Screen 
-       name="Usuario" 
+       name="Carros" 
        component={Tabs}
        options={{
-         title:'Meu Aplicativo',
+         title:'CARbon',
          headerStyle:{
          backgroundColor: '#D80303',
          },
-         headerTintColor: '#FFF' , 
+         headerTintColor: '#000' , 
          headerShown: true         
        }}
        >
@@ -72,7 +74,7 @@ export default function App() {
    </Stack.Screen>
    <Stack.Screen name="Login" component={Login} options={{headerShown: false}}></Stack.Screen>
    <Stack.Screen name="Home" component={Home} ></Stack.Screen>      
-   <Stack.Screen name="Clientes" component={Clientes} ></Stack.Screen>
+   <Stack.Screen name="Mercado" component={Mercado} ></Stack.Screen>
  </Stack.Navigator>
 </NavigationContainer>
   );

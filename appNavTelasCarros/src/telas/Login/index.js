@@ -122,4 +122,24 @@ const styles = StyleSheet.create({
     shadowOffset: { width: 3, height: 4 },
     shadowOpacity: 0.6,
     shadowRadius: 5,
-    elevat
+    elevation: 6,
+  },
+
+  textoBotao: {
+    color: '#fff',
+    fontSize: 20,
+    fontWeight: 'bold',
+    textTransform: 'uppercase',
+    letterSpacing: 1,
+  },
+
+  imgBg: {
+    flex: 1,
+    width: '100%',
+    height: '100%',
+    opacity: 1,
+    justifyContent: "center",
+    alignItems: "center",
+    backgroundColor: '#000',
+  },
+});

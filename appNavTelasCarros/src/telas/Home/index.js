@@ -21,7 +21,7 @@ export default function Home({route, navigation}) {
                     <View style={styles.viewBotao}>
                         <TouchableOpacity
                             style={styles.botao}
-                            onPress={() => navigation.navigate("Usuario")}
+                            onPress={() => navigation.navigate("Carros")}
                         >
                             <Text style={styles.textoBotao}>Acelerar!</Text>
                         </TouchableOpacity>
@@ -57,4 +57,26 @@ const styles = StyleSheet.create({
         textShadowRadius: 5,
         textAlign: 'center',
         marginBottom: 40,
-  
+    },
+    viewBotao: {
+        marginTop: 20,
+    },
+    botao: {
+        backgroundColor: '#d40000',
+        paddingVertical: 15,
+        paddingHorizontal: 35,
+        borderRadius: 10,
+        shadowColor: '#000',
+        shadowOffset: { width: 2, height: 4 },
+        shadowOpacity: 0.7,
+        shadowRadius: 5,
+        elevation: 5,
+    },
+    textoBotao: {
+        color: '#fff',
+        fontSize: 20,
+        fontWeight: 'bold',
+        textTransform: 'uppercase',
+        letterSpacing: 1.5,
+    },
+});
