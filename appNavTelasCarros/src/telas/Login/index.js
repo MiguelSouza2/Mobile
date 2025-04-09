@@ -32,7 +32,7 @@ export default function Login({ navigation }) {
         <View style={styles.logo}>
           <Image
             style={{ width: 280, resizeMode: 'contain' }}
-            source={require('../../../assets/img/react.png')} // imagem do Relâmpago McQueen ou algo racing
+            source={require('../../../assets/img/carrinhos/hotwheels.png')} // imagem do Relâmpago McQueen ou algo racing
           />
         </View>
 

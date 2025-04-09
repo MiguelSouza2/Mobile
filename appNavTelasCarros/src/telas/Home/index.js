@@ -6,14 +6,14 @@ export default function Home({route, navigation}) {
         <View style={styles.container}>
             <ScrollView>
                 <ImageBackground
-                    source={require('../../../assets/img/fundo4.jpg')} // troque pra uma imagem com tema automobilístico
+                    source={require('../../../assets/img/fundo2.jpg')} // troque pra uma imagem com tema automobilístico
                     style={styles.imgBg}
                     resizeMode="cover"
                 >
                     <View style={styles.logo}>
                         <Image
                             style={{ width: 300, resizeMode: 'contain' }}
-                            source={require('../../../assets/img/carrinhos/hotwheels.png')} // coloque uma logo com tema automotivo
+                            source={require('../../../assets/img/peugeot.png')} // coloque uma logo com tema automotivo
                         />
                     </View>
                     
@@ -53,8 +53,7 @@ const styles = StyleSheet.create({
         backgroundColor: '#000',
     },
     logo: {
-        marginTop: 50,
-        marginBottom: 30,
+        marginTop: 20,
         alignItems: 'center',
     },
     texto: {
@@ -65,10 +64,10 @@ const styles = StyleSheet.create({
         textShadowOffset: { width: 2, height: 2 },
         textShadowRadius: 5,
         textAlign: 'center',
-        marginBottom: 40,
+        marginBottom: 10,
     },
     viewBotao: {
-        marginTop: 20,
+        marginTop: 10,
     },
     botao: {
         backgroundColor: '#d40000',
